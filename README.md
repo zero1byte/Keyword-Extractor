@@ -1,10 +1,10 @@
-# 🔑 Keyword Extractor
+#  Keyword Extractor
 
 A TF-IDF based keyword extraction pipeline trained on the [LDKP10K](https://huggingface.co/datasets/midas/ldkp10k) scientific keyphrase dataset from HuggingFace.
 
 ---
 
-## ✨ Features
+##  Features
 
 - End-to-end NLP pipeline: data loading → preprocessing → training → evaluation
 - TF-IDF vectorizer with **unigram, bigram, and trigram** support
@@ -15,7 +15,7 @@ A TF-IDF based keyword extraction pipeline trained on the [LDKP10K](https://hugg
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 keyword-extractor/
@@ -27,7 +27,7 @@ keyword-extractor/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the repository
 
@@ -117,7 +117,7 @@ Averages are computed across all valid test samples.
 
 ---
 
-## 🧩 Usage as a Module
+##  Usage as a Module
 
 ```python
 from keyword_extractor import KeywordExtractor, load_dataset, prepare_data
@@ -142,7 +142,7 @@ precision, recall, f1 = extractor.evaluate(test_df, sample_size=100)
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 TF-IDF is a strong baseline but has inherent constraints:
 
@@ -155,7 +155,7 @@ For improved extraction, consider transformer-based models such as **KeyBERT**, 
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 | Library | Purpose |
 |---|---|
@@ -168,6 +168,4 @@ For improved extraction, consider transformer-based models such as **KeyBERT**, 
 
 ---
 
-## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
